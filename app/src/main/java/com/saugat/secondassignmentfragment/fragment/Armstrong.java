@@ -17,7 +17,7 @@ import com.saugat.secondassignmentfragment.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Armstrong extends Fragment implements View.OnClickListener{
+public class Armstrong extends Fragment implements View.OnClickListener {
 
     private Button btnCalculateArmstrong;
     private EditText etArmstrongNumber;
@@ -50,16 +50,16 @@ public class Armstrong extends Fragment implements View.OnClickListener{
 
         temp = n;
 
-        while(n > 0){
-            a = n%10;
-            n = n/10;
-            c = c+(a*a*a);
+        while (n > 0) {
+            a = n % 10;
+            n = n / 10;
+            c = c + (a * a * a);
         }
 
-        if (temp == c){
+        if (temp == c) {
             tvArmstrongResult.append(temp + " is a armstrong number.\n");
-        }
-        else {
+        } else {
             tvArmstrongResult.append(temp + " is not a armstrong number.\n");
+        }
     }
 }
