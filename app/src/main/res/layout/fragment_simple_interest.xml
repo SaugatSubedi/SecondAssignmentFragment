@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#A6867E4B"
+    tools:context=".fragment.SimpleInterest">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple Interest"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="#000"
+        />
+
+    <EditText
+        android:id="@+id/etPrinciple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:hint="Enter the principle.."
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:hint="Enter the time.."
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/etRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:hint="Enter the rate.."
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnCalculateSI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/tvSIResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"/>
+
+
+
+</LinearLayout>

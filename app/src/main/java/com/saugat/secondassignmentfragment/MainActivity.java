@@ -8,8 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.saugat.secondassignmentfragment.fragment.Armstrong;
+import com.saugat.secondassignmentfragment.fragment.Automorphic;
 import com.saugat.secondassignmentfragment.fragment.CircleFragment;
 import com.saugat.secondassignmentfragment.fragment.Palendrome;
+import com.saugat.secondassignmentfragment.fragment.SimpleInterest;
+import com.saugat.secondassignmentfragment.fragment.Swapping;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -52,6 +56,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.Palendrome:
                 Palendrome palindrome = new Palendrome();
                 fragmentTransaction.replace(R.id.fragmentContainer, palindrome);
+                fragmentTransaction.commit();
+                break;
+
+            case R.id.SI:
+                SimpleInterest simpleInterest = new SimpleInterest();
+                fragmentTransaction.replace(R.id.fragmentContainer, simpleInterest);
+                fragmentTransaction.commit();
+                break;
+
+            case R.id.Armstrong:
+                Armstrong armstrong = new Armstrong();
+                fragmentTransaction.replace(R.id.fragmentContainer, armstrong);
+
+            case R.id.Automorphic:
+                Automorphic automorphic = new Automorphic();
+                fragmentTransaction.replace(R.id.fragmentContainer, automorphic );
+                fragmentTransaction.commit();
+                break;
+
+            case R.id.Swapping:
+                Swapping swapping = new Swapping();
+                fragmentTransaction.replace(R.id.fragmentContainer, swapping);
                 fragmentTransaction.commit();
                 break;
         }
