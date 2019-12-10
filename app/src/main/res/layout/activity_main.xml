@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#5BCDDC39"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/Calculator"
+        android:layout_width="330dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="28dp"
+        android:text="Calculation"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:text="CIRCLE"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/Palendrome"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Calculator" />
+
+    <Button
+        android:id="@+id/Palendrome"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="#000"
+        android:text="PALENDROME"
+        app:layout_constraintEnd_toStartOf="@+id/SI"
+        app:layout_constraintTop_toBottomOf="@+id/Calculator" />
+
+    <Button
+        android:id="@+id/SI"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="20dp"
+        android:text="SI"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Calculator" />
+
+    <Button
+        android:id="@+id/Armstrong"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="ARMSTRONG"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/Automorphic"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Circle" />
+
+    <Button
+        android:id="@+id/Automorphic"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="12dp"
+        android:text="AUTOMORPIC"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/Swapping"
+        app:layout_constraintTop_toBottomOf="@+id/Palendrome" />
+
+    <Button
+        android:id="@+id/Swapping"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="SWAPPING"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SI" />
+
+    <LinearLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="244dp"
+        app:layout_constraintTop_toTopOf="@+id/Calculator"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
